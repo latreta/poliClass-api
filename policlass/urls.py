@@ -27,6 +27,7 @@ from blocos.api.viewsets import BlocosViewSet
 from cadeiras.api.viewsets import CadeirasViewSet
 from discentes.api.viewsets import DiscentesViewSet
 from salas.api.viewsets import SalasViewSet
+from users.api.viewsets import UserViewSet, GroupViewSet
 
 router = routers.DefaultRouter()
 router.register(r'blocos', BlocosViewSet)
@@ -34,6 +35,8 @@ router.register(r'salas', SalasViewSet)
 router.register(r'discentes', DiscentesViewSet)
 router.register(r'cadeiras', CadeirasViewSet)
 router.register(r'aulas', AulasViewSet)
+router.register(r'users', UserViewSet)
+router.register(r'groups', GroupViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
