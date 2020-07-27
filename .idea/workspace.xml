@@ -4,6 +4,12 @@
     <list default="true" id="1029f49f-01c2-4aa7-83f0-949cae7fe1d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/policlass/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/policlass/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policlass/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/policlass/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/api/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/api/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +40,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/discentes" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Latreta\Documents\Workspaces\python\policlass\discentes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Latreta\Documents\Workspaces\python\policlass\policlass" />
       <recent name="C:\Users\Latreta\Documents\Workspaces\python\policlass" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Latreta\Documents\Workspaces\python\policlass\discentes" />
     </key>
   </component>
   <component name="RunManager" selected="Python.3 - Run Server">
@@ -163,29 +170,64 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="376" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595767161385" />
+    <state x="1140" y="293" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595881083869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1140" y="293" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595881083869" />
+    <state x="1064" y="140" key="CommitChangelistDialog2" timestamp="1595880608949">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1064" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595880608949" />
     <state x="568" y="287" key="FileChooserDialogImpl" timestamp="1595767004080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="568" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595767004080" />
-    <state width="1142" height="207" key="GridCell.Tab.0.bottom" timestamp="1595772726017">
+    <state width="1063" height="206" key="GridCell.Tab.0.bottom" timestamp="1595882592028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1142" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595772726017" />
-    <state width="1142" height="207" key="GridCell.Tab.0.center" timestamp="1595772726017">
+    <state width="1063" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595882592028" />
+    <state width="1063" height="206" key="GridCell.Tab.0.center" timestamp="1595882592028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1142" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595772726017" />
-    <state width="1142" height="207" key="GridCell.Tab.0.left" timestamp="1595772726017">
+    <state width="1063" height="206" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595882592028" />
+    <state width="1063" height="206" key="GridCell.Tab.0.left" timestamp="1595882592028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1142" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595772726017" />
-    <state width="1142" height="207" key="GridCell.Tab.0.right" timestamp="1595772726017">
+    <state width="1063" height="206" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595882592028" />
+    <state width="1063" height="206" key="GridCell.Tab.0.right" timestamp="1595882592028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1142" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595772726017" />
+    <state width="1063" height="206" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595882592028" />
+    <state width="1063" height="316" key="GridCell.Tab.1.bottom" timestamp="1595882545475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1063" height="316" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595882545475" />
+    <state width="1063" height="316" key="GridCell.Tab.1.center" timestamp="1595882545475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1063" height="316" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595882545475" />
+    <state width="1063" height="316" key="GridCell.Tab.1.left" timestamp="1595882545475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1063" height="316" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595882545475" />
+    <state width="1063" height="316" key="GridCell.Tab.1.right" timestamp="1595882545475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1063" height="316" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595882545475" />
     <state x="289" y="174" key="SettingsEditor" timestamp="1595766663838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="289" y="174" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595766663838" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/users/api/viewsets.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
