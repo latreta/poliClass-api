@@ -1,5 +1,6 @@
 from django.contrib.auth.models import Group
-from django.http import HttpResponse
+from rest_framework import status
+from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
 from users.api.serializers import UserSerializer, GroupSerializer
@@ -17,7 +18,20 @@ class UserViewSet(ModelViewSet):
             password=request.data['password'],
             password2=request.data['password2']
         )
-        return HttpResponse(user)
+        return user
+
+    def list(self, request, *args, **kwargs):
+        return Response(status=status.HTTP_403_FORBIDDEN)
+
+    def destroy(self, request, *args, **kwargs):
+        return Response(status=status.HTTP_403_FORBIDDEN)
+
+    def update(self, request, *args, **kwargs):
+        # Update user data like change password or something
+        return Response(status=status.HTTP_403_FORBIDDEN)
+
+    def retrieve(self, request, *args, **kwargs):
+        return Response(status=status.HTTP_403_FORBIDDEN)
 
 
 class GroupViewSet(ModelViewSet):
