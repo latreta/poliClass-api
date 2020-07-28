@@ -1,10 +1,12 @@
 from django.contrib.auth.models import Group
+from django.http import HttpResponse
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
+from rolepermissions.roles import assign_role
 
 from users.api.serializers import UserSerializer, GroupSerializer
-from users.models import Account, AccountManager
+from users.models import Account
 
 
 class UserViewSet(ModelViewSet):
@@ -18,7 +20,8 @@ class UserViewSet(ModelViewSet):
             password=request.data['password'],
             password2=request.data['password2']
         )
-        return user
+        assign_role(user, 'funcionario')
+        return HttpResponse(user)
 
     def list(self, request, *args, **kwargs):
         return Response(status=status.HTTP_403_FORBIDDEN)
