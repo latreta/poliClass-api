@@ -13,4 +13,4 @@ class Aula(models.Model):
     sala = models.ForeignKey(Sala, on_delete=models.CASCADE)
 
     def __str__(self):
-        return '%s %s %s ' % self.disciplina.name, self.disciplina.sala.name, self.disciplina.inicio
+        return self.disciplina.name
