@@ -1,9 +1,9 @@
 from rest_framework.serializers import ModelSerializer
-from discentes.models import Discente
+from docentes.models import Docente
 
 
-class DiscenteSerializer(ModelSerializer):
+class DocenteSerializer(ModelSerializer):
 
     class Meta:
-        model = Discente
+        model = Docente
         fields = ['id', 'name']

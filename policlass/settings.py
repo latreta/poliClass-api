@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rolepermissions',
     'blocos',
     'salas',
-    'discentes',
+    'docentes',
     'cadeiras',
     'aulas',
     'users'

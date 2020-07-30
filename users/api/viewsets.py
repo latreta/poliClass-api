@@ -1,15 +1,12 @@
-from django.contrib.auth.models import Group
 from django.http import HttpResponse
-from rest_framework import status
-from rest_framework.response import Response
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.viewsets import GenericViewSet
 from rolepermissions.roles import assign_role
 
-from users.api.serializers import UserSerializer, GroupSerializer
+from users.api.serializers import UserSerializer
 from users.models import Account
 
 
-class UserViewSet(ModelViewSet):
+class UserViewSet(GenericViewSet):
     queryset = Account.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
 
@@ -23,20 +20,3 @@ class UserViewSet(ModelViewSet):
         assign_role(user, 'funcionario')
         return HttpResponse(user)
 
-    def list(self, request, *args, **kwargs):
-        return Response(status=status.HTTP_403_FORBIDDEN)
-
-    def destroy(self, request, *args, **kwargs):
-        return Response(status=status.HTTP_403_FORBIDDEN)
-
-    def update(self, request, *args, **kwargs):
-        # Update user data like change password or something
-        return Response(status=status.HTTP_403_FORBIDDEN)
-
-    def retrieve(self, request, *args, **kwargs):
-        return Response(status=status.HTTP_403_FORBIDDEN)
-
-
-class GroupViewSet(ModelViewSet):
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
