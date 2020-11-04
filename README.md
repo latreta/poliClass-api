@@ -1,4 +1,4 @@
-# Policlass Python Rest API
+# Aulas Python Rest API
 
 Django Rest API using JWT and Django Role permission based authentication
 
